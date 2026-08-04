@@ -11,7 +11,7 @@ const TIMELINE_DATA = [
     type: "experience",
     title: "Full Stack Engineer Intern",
     subtitle: "VybTek IT Solution Udaipur",
-    duration: "June 2026 - Present",
+    duration: "June 2026 - July 2026",
     glow: "cyan",
     description: [
       "Contributing to the development of responsive user dashboards using React and Next.js.",
