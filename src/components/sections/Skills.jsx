@@ -50,10 +50,10 @@ function SkillBar({ name, level }) {
         <span className="text-xs sm:text-sm font-semibold text-slate-300">{name}</span>
         <span className="text-xs font-mono font-bold text-cyan-400">{level}%</span>
       </div>
-      <div className="w-full h-1.5 bg-slate-900/60 border border-slate-800/40 rounded-full overflow-hidden">
-        <motion.div
-          className="h-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400 rounded-full"
-          initial={{ width: 0 }}
+    <div className="w-full h-2 bg-slate-900/60 rounded-full overflow-hidden">
+       <motion.div
+  className="h-full rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400"
+  style={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -134,7 +134,7 @@ export default function Skills() {
               key={index}
               glowColor={category.glow}
               variants={cardVariants}
-              className="flex flex-col h-full"
+             className="flex flex-col h-full w-full"
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800/60">

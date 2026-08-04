@@ -20,15 +20,14 @@ export default function LoadingScreen() {
   useEffect(() => {
     if (index === GREETINGS.length - 1) {
       const timer = setTimeout(() => {
-        setLoading(false);
-      }, 700);
+  setLoading(false);
+}, 1000);
       return () => clearTimeout(timer);
     }
 
     const timer = setTimeout(() => {
-      setIndex((prev) => prev + 1);
-    }, 350);
-
+  setIndex((prev) => prev + 1);
+}, 600);
     return () => clearTimeout(timer);
   }, [index]);
 
@@ -55,8 +54,8 @@ export default function LoadingScreen() {
           }}
         >
           {/* Subtle glowing liquid elements in loading screen background */}
-          <div className="absolute w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[80px] animate-pulse-slow" />
-          <div className="absolute w-[200px] h-[200px] bg-cyan-600/5 rounded-full blur-[60px] animate-float-slow bottom-10 left-10" />
+         <div className="hidden sm:block absolute w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[80px] animate-pulse-slow" />
+      <div className="hidden sm:block absolute w-[200px] h-[200px] bg-cyan-600/5 rounded-full blur-[60px] animate-float-slow bottom-10 left-10" />
           
           <div className="relative z-10 flex flex-col items-center">
             {/* Word swap container */}

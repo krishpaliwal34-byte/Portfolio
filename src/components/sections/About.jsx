@@ -169,7 +169,7 @@ export default function About() {
               className="flex flex-col items-center justify-center text-center p-6 sm:p-8"
             >
               <span className="text-4xl sm:text-5xl font-display font-black text-cyan-400 mb-2">
-                <Counter from={0} to={15} suffix="+" />
+                <Counter from={0} to={5} suffix="+" />
               </span>
               <h4 className="text-sm font-semibold text-white mb-1">
                 Projects Finished

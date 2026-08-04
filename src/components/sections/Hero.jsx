@@ -36,8 +36,8 @@ const LinkedinIcon = (props) => (
 );
 
 const WORDS = [
-  "Full Stack Developer",
-  "Software Developer",
+  "NextJs Developer",
+  "FullStack Engineer",
 ];
 
 function TypingText() {
@@ -138,8 +138,8 @@ export default function Hero() {
             </h1>
 
             {/* Roles */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display text-slate-300 font-medium mb-6 flex items-center gap-2 min-h-[40px]">
-              BCA Student & <TypingText />
+           <h2 className="text-lg sm:text-2xl md:text-3xl font-display text-slate-300 font-medium mb-6 flex items-center gap-2 min-h-[40px] whitespace-nowrap">
+           BCA Student & <TypingText />
             </h2>
 
             {/* Bio summary */}
