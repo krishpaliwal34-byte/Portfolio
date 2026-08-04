@@ -46,8 +46,7 @@ export default function Home() {
         {/* 6. Services Section */}
         <Services />
 
-        {/* 7. Testimonials Carousel */}
-        <Testimonials />
+        {/*<Testimonials /> */}
 
         {/* 8. Contact Form & Socials */}
         <Contact />
